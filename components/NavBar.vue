@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="fixed w-full p-6 bg-sky-500/50 sticky top-0">
+    <nav class="fixed w-full p-6 bg-blue-500 sticky top-0">
       <div class="flex items-center justify-between">
         <!-- Header logo -->
         <div>
@@ -35,7 +35,10 @@
             <li><a href="#" class="">Services</a></li>
             <li><a href="#" class="">Features</a></li>
             <li><a href="#" class="">FAQ</a></li>
-            <li><a href="#" class="">Contact</a></li>
+            <li class="relative">
+              <a href="#" class="">Contact</a>
+            </li>
+
             <li>
               <a
                 href="#"
@@ -376,6 +379,14 @@ export default {
         }
       },
     },
+    /* isOpenMenu: {
+      immediate: true,
+      handler() {
+        console.log("Hola");
+        console.log(this.isOpenMenu);
+        document.body.style.setProperty("hidden", "overflow");
+      },
+    }, */
   },
   mounted() {
     document.addEventListener("keydown", (e) => {
